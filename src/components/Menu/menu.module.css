@@ -1,0 +1,78 @@
+/* Estilo mobile-first */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.menuContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.menuIcon {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.iconBar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-grow: 1;
+    /* Para garantir que o Brand ocupe o espaço central */
+}
+
+.profileIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menuOptions {
+    width: 100%;
+    /* O menu ocupa 100% da largura da tela */
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.menuOptions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuOptions li {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    /* Faz as opções ocuparem toda a largura */
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .menuOptions li {
+        padding: 1.5rem;
+    }
+}
